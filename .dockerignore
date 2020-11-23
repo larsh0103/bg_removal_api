@@ -1,0 +1,8 @@
+## Exclude everything
+
+*
+
+## Except these files
+!image_background_remove_tool/
+!app.py
+!requirements-api.txt

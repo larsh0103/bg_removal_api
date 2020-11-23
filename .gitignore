@@ -6,3 +6,6 @@
 !requirements.txt
 !test_api.py
 !.gitignore
+!requirements-api.txt
+!Dockerfile
+!.dockerignore
