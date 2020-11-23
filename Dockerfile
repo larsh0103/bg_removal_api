@@ -7,6 +7,6 @@ RUN pip install --upgrade pip
 RUN pip install numpy
 RUN pip install -r requirements-api.txt
 
-EXPOSE 80
+ENV PORT 8080
 
-CMD ["uvicorn", "app:app", "--host", "0.0.0.0", "--port", "80"]
+CMD exec gunicorn --bind 0.0.0.0:$PORT --workers 1 --threads 8 --timeout 0 app:app
