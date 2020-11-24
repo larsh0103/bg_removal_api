@@ -1,7 +1,6 @@
 *
 
-!image_background_remove_tool
-!app.py
+!app/
 !requirements.in
 !requirements.txt
 !test_api.py
