@@ -7,6 +7,7 @@ import numpy as np
 from image_background_remove_tool import run
 from PIL import Image
 import base64
+import uvicorn
 
 
 app = FastAPI()
@@ -41,3 +42,7 @@ async def create_upload_file(file : UploadFile = File(...)):
     _, encoded_img = cv2.imencode('.PNG', filtered_image)
     encoded_img = base64.b64encode(encoded_img)
     return {"filename" : file.filename, "file" : encoded_img}
+
+
+if __name__ == "__main__":
+    uvicorn.run(app, host="0.0.0.0", port=8080)

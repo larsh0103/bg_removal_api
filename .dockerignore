@@ -6,3 +6,5 @@
 !image_background_remove_tool/
 !app.py
 !requirements-api.txt
+!*.pth
+!download_models.py
