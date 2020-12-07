@@ -10,6 +10,7 @@
 !.dockerignore
 !README.md
 !download_models.py
+!Procfile
 
 *.png
 *.bat
