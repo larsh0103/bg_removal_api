@@ -1,9 +1,0 @@
-## Exclude everything
-
-*
-
-## Except these files
-!app/
-!requirements-api.txt
-!*.pth
-!download_models.py
