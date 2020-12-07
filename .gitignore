@@ -11,6 +11,7 @@
 !README.md
 !download_models.py
 !Procfile
+!Aptfile
 
 *.png
 *.bat
