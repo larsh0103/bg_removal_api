@@ -10,9 +10,9 @@ from PIL import Image
 import base64
 import uvicorn
 from fastapi.middleware.cors import CORSMiddleware
-import sys
-sys.path.append("../")
-import download_models
+# import sys
+# sys.path.append("../")
+# import download_models
 
 
 app = FastAPI()
@@ -29,8 +29,8 @@ app.add_middleware(
 
 
 def filter_image(image):
-    img = run.process(input_path=image, output_path='filtered_image_path.png', model_name="u2net",model_dir='app/image_background_remove_tool/models',
-            preprocessing_method_name="bbd-fastrcnn", postprocessing_method_name="rtb-bnb")
+    img = run.process(input_path=image, output_path='filtered_image_path.png', model_name="u2netp",model_dir='app/image_background_remove_tool/models',
+            preprocessing_method_name=None, postprocessing_method_name="rtb-bnb")
     return img
 
 class HealthResponse(BaseModel):

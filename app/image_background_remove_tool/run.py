@@ -81,8 +81,8 @@ def __save_image_file__(img, file_name, output_path, wmode):
         img.save(os.path.join(output_path, file_name))
 
 
-def process(input_path, output_path, model_name="u2net",model_dir='models',
-            preprocessing_method_name="bbd-fastrcnn", postprocessing_method_name="rtb-bnb"):
+def process(input_path, output_path, model_name="u2netp",model_dir='models',
+            preprocessing_method_name=None, postprocessing_method_name="rtb-bnb"):
     """
     Processes the file.
     :param input_path: The path to the image / folder with the images to be processed.
