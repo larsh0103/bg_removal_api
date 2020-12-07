@@ -1,6 +1,6 @@
-*
+/*
 
-!app/
+!/app
 !requirements.in
 !requirements.txt
 !test_api.py
@@ -10,3 +10,9 @@
 !.dockerignore
 !README.md
 !download_models.py
+
+*.png
+*.bat
+*.jpg
+*.pyc
+*.ipynb
