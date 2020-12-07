@@ -6,6 +6,7 @@
 !download_models.py
 !Procfile
 !Aptfile
+!/app/image_background_remove_tool/
 
 *.png
 *.bat
